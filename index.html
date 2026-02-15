@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Calculater</h2>
+    </header>
+    
+    <h3>3rd Sem</h3>
+    <form>
+        <input type="text" placeholder="Enter your name" id="nme">
+        <h4>Enter the detail of Theory marks</h4> <br>
+        <label >Data structure and algorithm : </label>
+        <input type="number" id="sub1" min="0" max="100"> <br>
+        <label  >Fundamental of Data science : </label>
+        <input type="number" id="sub2" min="0" max="100"><br>
+        <label  >Introduction to Computer Architecture : </label>
+        <input type="number" id="sub3" min="0" max="100"><br>
+        <label >Professional practice and cyber law : </label>
+        <input type="number" id="sub4" min="0" max="100"><br>
+        <label >Maths for Computing : </label>
+        <input type="number" id="sub5" min="0" max="100"><br>
+        <label >object oriented programming : </label>
+        <input type="number" id="sub6" min="0" max="100"><br>
+        <h4 class = "B">Enter the Practical marks</h4>
+        <label >Data structure and algorithm Lab : </label>
+        <input type="number" id="sub7" min="0" max="100"><br>
+        <label>Fundamental of Data Science Lab : </label>
+        <input type="number" id="sub8" min="0" max="100"><br>
+        <label>Object Oriented Programming Lab : </label>
+        <input type="number" id="sub9" min="0" max="100"> <br>
+        <button type="button" class="btn" onclick="percentage()">View Marks</button>
+        <div id="box" class="box"></div>
+    </form>
+    <button class="nxt-btn" onclick="gotosem4()">➡</button>
+    <footer>
+        @2026 | All Rights Resurved
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

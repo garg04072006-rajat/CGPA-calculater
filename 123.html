@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+        <h2>Calculater</h2>
+    </header>
+    
+    <h3>4th Sem</h3>
+    <form>
+        <input type="text" placeholder="Enter your name" id="nme">
+        <h4>Enter the detail of Theory marks</h4> <br>
+        <label >DataBase Management System : </label>
+        <input type="number" id="sub1" min="0" max="100"> <br>
+        <label  >Web Technologies: </label>
+        <input type="number" id="sub2" min="0" max="100"><br>
+        <label  >Computer Network : </label>
+        <input type="number" id="sub3" min="0" max="100"><br>
+        <label >Fundamental of Statistical Inference: </label>
+        <input type="number" id="sub4" min="0" max="100"><br>
+        <label >Design and Analysis of Algorithm: </label>
+        <input type="number" id="sub5" min="0" max="100"><br>
+        <h4 class = "B">Enter the Practical marks</h4>
+        <label >DataBase Management System lab : </label>
+        <input type="number" id="sub6" min="0" max="100"><br>
+        <label >Web Technologies Lab : </label>
+        <input type="number" id="sub7" min="0" max="100"><br>
+        <label>Statistical Inference using Python Lab : </label>
+        <input type="number" id="sub8" min="0" max="100"><br>
+        <label>Computer Networks Lab : </label>
+        <input type="number" id="sub9" min="0" max="100"> <br>
+        <button type="button" class="btn" onclick="percentage()">View Marks</button>
+        <div id="box" class="box"></div>
+    </form>
+    <button class="nxt-btn1" onclick="gotosem3()">⬅</button>
+    <footer>
+        @2026 | All Rights Resurved
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

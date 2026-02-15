@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(121, 121, 209);
+    color: azure;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* nav {
+    background-color: rgb(214, 231, 231);
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 30px;
+    
+
+}
+
+nav a {
+    text-decoration: none;
+    
+}  */
+
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+form {
+    text-align: center;
+    margin: 20px 450px 71px 450px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 9px;
+}
+
+input {
+    margin: 8px 0;
+    
+}
+
+
+.B {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+input {
+    width: 150px;
+}
+
+label {
+    text-align: left;
+    display: inline-block;
+    width: 280px;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(132, 132, 229);
+    border-radius: 20px;
+    color: beige;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: aqua;
+}
+
+.box {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.nxt-btn {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: rgb(124, 124, 230);
+    cursor: pointer;
+}
+
+.nxt-btn1 {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: rgb(124, 124, 230);
+    cursor: pointer;
+}
+.nxt-btn:hover {
+    background-color: aliceblue;
+}
+.nxt-btn1:hover {
+    background-color: aliceblue;
+}
+footer {
+    background-color: rgb(107, 107, 189);
+    padding: 15px;
+    color: azure;
+}
