@@ -12,28 +12,28 @@
     </header>
     
     <h3>4th Sem</h3>
-    <form>
+    <form autocomplete="off">
         <input type="text" placeholder="Enter your name" id="nme">
         <h4>Enter the detail of Theory marks</h4> <br>
         <label >DataBase Management System : </label>
-        <input type="number" id="sub1" min="0" max="100"> <br>
+        <input type="number" id="sub1" min="0" max="100" oninput="limitmarks(this)"> <br>
         <label  >Web Technologies: </label>
-        <input type="number" id="sub2" min="0" max="100"><br>
+        <input type="number" id="sub2" min="0" max="100" oninput="limitmarks(this)"><br>
         <label  >Computer Network : </label>
-        <input type="number" id="sub3" min="0" max="100"><br>
+        <input type="number" id="sub3" min="0" max="100" oninput="limitmarks(this)"><br>
         <label >Fundamental of Statistical Inference: </label>
-        <input type="number" id="sub4" min="0" max="100"><br>
+        <input type="number" id="sub4" min="0" max="100" oninput="limitmarks(this)"><br>
         <label >Design and Analysis of Algorithm: </label>
-        <input type="number" id="sub5" min="0" max="100"><br>
+        <input type="number" id="sub5" min="0" max="100" oninput="limitmarks(this)"><br>
         <h4 class = "B">Enter the Practical marks</h4>
         <label >DataBase Management System lab : </label>
-        <input type="number" id="sub6" min="0" max="100"><br>
+        <input type="number" id="sub6" min="0" max="100" oninput="limitmarks(this)"><br>
         <label >Web Technologies Lab : </label>
-        <input type="number" id="sub7" min="0" max="100"><br>
+        <input type="number" id="sub7" min="0" max="100" oninput="limitmarks(this)"><br>
         <label>Statistical Inference using Python Lab : </label>
-        <input type="number" id="sub8" min="0" max="100"><br>
+        <input type="number" id="sub8" min="0" max="100" oninput="limitmarks(this)"><br>
         <label>Computer Networks Lab : </label>
-        <input type="number" id="sub9" min="0" max="100"> <br>
+        <input type="number" id="sub9" min="0" max="100" oninput="limitmarks(this)"> <br>
         <button type="button" class="btn" onclick="percentage()">View Marks</button>
         <div id="box" class="box"></div>
     </form>

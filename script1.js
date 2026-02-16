@@ -1,6 +1,15 @@
 function gotosem3() {
     window.location.href = "index.html";
 }
+function limitmarks(input) {
+    let value = Number(input.value)
+    if(value > 100) {
+        input.value = 100;
+    }
+    if (value < 0) {
+        input.value = 0;
+    }
+}
 function GradePoints(marks) {
     if(marks >= 90) return 10;
     else if(marks >= 80) return 9;
@@ -15,6 +24,13 @@ function GradePoints(marks) {
 }
 function percentage() {
     let name1 = document.getElementById("nme").value;
+     let input = ["sub1", "sub2", "sub3", "sub4", "sub5", "sub6", "sub7", "sub8", "sub9"]
+    for (let id of input) {
+        let inputbox = document.getElementById(id);
+        if(inputbox.value === "") {
+            inputbox.value = 0;
+        }
+    }
     let sub11 = Number(document.getElementById("sub1").value) || 0;
     let sub22= Number(document.getElementById("sub2").value) || 0;
     let sub33 = Number(document.getElementById("sub3").value) || 0;
@@ -28,12 +44,7 @@ function percentage() {
     let percentage = total/9;
     let marks = [sub11, sub22, sub33, sub44, sub55, sub66, sub77, sub88, sub99]
 
-    for (let m of marks) {
-        if(m < 0 || m > 100) {
-            alert("enter the marks in range of 0 to 100");
-            return;
-        }
-    }
+
     let credits = [3, 3, 3, 3, 3, 3, 1, 1, 1];
     let totalcredits = 0;
     let totalCiGi = 0;
@@ -73,3 +84,9 @@ function percentage() {
     
 
 }
+window.onload = function() {
+    let inputs = document.querySelectorAll("input[type='number']");
+    inputs.forEach(input => input.value = "");
+    
+    document.getElementById("nme").value = "";
+};
