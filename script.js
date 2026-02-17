@@ -49,7 +49,7 @@ function percentage() {
 
 
 
-    let credits = [3, 3, 3, 3, 3, 3, 1, 1, 1];
+    let credits = [3, 3, 3, 4, 3, 3, 1, 1, 1];
     let totalcredits = 0;
     let totalCiGi = 0;
 

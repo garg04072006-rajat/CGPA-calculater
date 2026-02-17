@@ -116,3 +116,29 @@ footer {
     padding: 15px;
     color: azure;
 }
+
+
+@media (max-width : 600px) {
+    form {
+        margin: 15px;
+        width: auto;
+    }
+    label {
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+    input {
+        width: 100%;
+        max-width: 100%;
+    }
+    .nxt-btn, .nxt-btn1 {
+        position: relative !important;
+        top: unset !important;
+        left: unset !important;
+        right: unset !important;
+        bottom: unset !important;
+        display: block;
+        margin: 10px auto;
+    }
+}
